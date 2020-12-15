@@ -4,6 +4,9 @@ const mongoose = require('mongoose');
 
 const User = require('../models/user');
 
+
+router.get('/NewUserForm', )
+
 router.post('/NewUserForm', (req, res, next) => {
     const user = new User({
         _id : mongoose.Types.ObjectId(),
@@ -11,5 +14,8 @@ router.post('/NewUserForm', (req, res, next) => {
         password: req.body.password
     });
 });
+
+
+router.delete('/NewUserForm', )
 
 module.exports = router;
